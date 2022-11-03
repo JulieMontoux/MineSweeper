@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Démineur</title>
+<meta charset="UTF-8" />
+<script src="MineSweeper.js"></script>
+<script>
+    /* on load scripts */
+    window.onload = function() {
+        MineSweeper.initialise();
+    }
+</script>
+<link href="MineSweeper.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page">
+        <h1>
+            Démineur de Julie la queen
+        </h1>
+        <div class="content">
+
+            <div class="game" id="plateau">
+            </div>
+            <div class="options">
+    
+                <div id="result" class="result">
+    
+                </div>
+    
+                <div class="menus">
+                    <div class="menu" onclick="MineSweeper.startGame('easy');">
+                        Niveau "Facile"
+                    </div>
+                    <div class="menu" onclick="MineSweeper.startGame('normal');">
+                        Niveau "Normal"
+                    </div>
+                    <div class="menu" onclick="MineSweeper.startGame('hard');">
+                        Niveau "Difficile"
+                    </div>
+                    <div class="menu" onclick="MineSweeper.startGame('extreme');">
+                        Niveau "Extrême"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

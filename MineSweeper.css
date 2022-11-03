@@ -1,0 +1,28 @@
+/* global */
+* {font-family: 'Times New Roman', Times, serif; font-size: 14px; font-weight:normal; font-style:normal; color:#454550; padding:0; margin:0; box-sizing: border-box;}
+body {background:white; margin:100px;}
+/* titre */
+h1 {font-size:40px; color:darkmagenta;}
+
+/* page */
+.page {position: relative; text-align: center; margin-top: -5rem;}
+.page .content{ display: flex; align-items: center; justify-content: center;}
+.page .game {display: inline-block; vertical-align:top;}
+.page .options { display:inline-block; vertical-align:top; text-align: center;}
+
+/* menu */
+.menus .menu {padding:10px 25px; margin:8px; background: darkmagenta; color:white; cursor:pointer; width:200px; border-radius: 5em; margin-top: 1rem;}
+
+/* result */
+.result {font-size:30px;}
+
+/* mine field */
+.field {background: #888888; }
+.field .cell {width:30px; height:30px; background:#33CC33; cursor:pointer; border-left:solid 1px #666666; border-top:solid 1px #666666; border-right:solid 1px #aaaaaa; border-bottom:solid 1px #aaaaaa;}
+.field .cell:hover { background:#338833;}
+.field .cell.bomb {background:#cc3333; cursor:default;}
+.field .cell.bomb:hover {background:#cc3333;}
+.field .cell.clear {background:none; cursor:default; color:white; font-weight:bold; text-align:center;}
+.field .cell.clear:hover {background:none;}
+.field .cell.marked {background:#3333cc; color:white; font-weight:bold; text-align:center; content:"!";}
+.field .cell.marked:hover {background:#333388;}
