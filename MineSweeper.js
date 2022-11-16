@@ -1,3 +1,4 @@
+// Démineur
 var MineSweeper = {
     name: 'MineSweeper',
 
@@ -217,4 +218,4 @@ var MineSweeper = {
         // Etat de la partie a termine 
         this.game.status = 0;
     },
-};
+} 
