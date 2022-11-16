@@ -1,4 +1,3 @@
-// Démineur
 var MineSweeper = {
     name: 'MineSweeper',
 
@@ -32,7 +31,7 @@ var MineSweeper = {
         status: 0,
         field: new Array(),
     },
-
+    // initialisation du jeu sur le mode easy
     initialise: function() {
         this.startGame('easy');
     },

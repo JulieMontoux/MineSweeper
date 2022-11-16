@@ -17,6 +17,62 @@
         <h1>
             Démineur de Julie la queen
         </h1>
+        <h1 id="chrono">00:00:00</h1>
+        <input type="button" id="start" value="start">
+        <input type="button" id="stop" value="stop">
+        <input type="button" id="reset" value="reset">
+        <script>
+            let start=document.getElementById("start");
+            let stop=document.getElementById("stop");
+            let reset=document.getElementById("reset");
+            let lap=document.getElementById("lap");
+            let chrono=document.getElementById("chrono");
+            let p=document.getElementById("p");
+            let lapslist=document.getElementById("laps");
+
+            let mils=0;
+            let secondes=0;
+            let minutes=0;
+            let count;
+
+            const commencer=()=>{
+                mils++;
+                if(mils>60){
+                   secondes++;
+                   mils=0;
+                }
+                if(secondes>60){
+                   minutes++;
+                   secondes=0;
+                }
+                if(mils<10){
+                   mils="0"+mils;
+                }
+
+                chrono.textContent = `${(minutes + "").padStart(2, "0")}:${(secondes + "").padStart(2, "0")}.${(mils + "").padStart(2, "0")}`;
+            
+            
+            }
+        
+            const arreter=()=>{
+                clearTimeout(count);
+            }
+        
+            const resetf=()=>{
+                  chrono.innerText="00:00:00";
+                  secondes=0;
+                  mils=0;
+                  minutes=0;
+                  clearTimeout(count);
+                 lapslist.textContent="";
+            }
+        
+        
+            start.addEventListener("click",()=>{
+               count=setInterval(commencer,50)});
+            stop.addEventListener("click",arreter);
+            reset.addEventListener("click",resetf);
+        </script>
         <div class="content">
             <div class="game" id="plateau">
             </div>
