@@ -3,24 +3,24 @@ var MineSweeper = {
 
     difficulties: {
         easy: {
-            lines: 8,
-            columns: 8,
+            lines: 9,
+            columns: 9,
             mines: 10,
         },
         normal: {
-            lines: 12,
-            columns: 12,
-            mines: 20,
-        },
-        hard: {
             lines: 16,
             columns: 16,
-            mines: 32,
+            mines: 40,
+        },
+        hard: {
+            lines: 22,
+            columns: 22,
+            mines: 100,
         },
         extreme: {
-            lines: 20,
-            columns: 20,
-            mines: 48,
+            lines: 30,
+            columns: 30,
+            mines: 250,
         },
     },
 
@@ -205,17 +205,14 @@ var MineSweeper = {
 
     displayWin: function() {
         /* Affiche le resultat dans l'espace dedie, en couleur */
-        document.getElementById('result').innerHTML = 'Gagn&eacute;';
-        document.getElementById('result').style.color = '#43b456';
-
+        alert("Bravo vous avez gagné!");
         /* Defini l'etat de la partie a termine */
         this.game.status = 0;
     },
 
     displayLose: function() {
         /* Affiche le resultat dans l'espace dedie, en couleur */
-        document.getElementById('result').innerHTML = 'Perdu';
-        document.getElementById('result').style.color = '#CC3333';
+        alert("Vous avez perdu, LOOSER!");
 
         /* Defini l'etat de la partie a termine */
         this.game.status = 0;
