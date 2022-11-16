@@ -184,7 +184,7 @@ var MineSweeper = {
         } else {
             /* Applique le marquage */
             document.getElementById('cell-'+x+'-'+y).className = 'cell marked';
-            document.getElementById('cell-'+x+'-'+y).innerHTML = '!';
+            document.getElementById('cell-'+x+'-'+y).innerHTML = '?';
             this.game.field[x][y] -= 100;
         }
     },

@@ -5,7 +5,6 @@
 <meta charset="UTF-8" />
 <script src="MineSweeper.js"></script>
 <script>
-    /* on load scripts */
     window.onload = function() {
         MineSweeper.initialise();
     }
@@ -25,10 +24,8 @@
             let start=document.getElementById("start");
             let stop=document.getElementById("stop");
             let reset=document.getElementById("reset");
-            let lap=document.getElementById("lap");
             let chrono=document.getElementById("chrono");
             let p=document.getElementById("p");
-            let lapslist=document.getElementById("laps");
 
             let mils=0;
             let secondes=0;
@@ -37,15 +34,15 @@
 
             const commencer=()=>{
                 mils++;
-                if(mils>60){
+                if(mils>=100){
                    secondes++;
                    mils=0;
                 }
-                if(secondes>60){
+                if(secondes>=60){
                    minutes++;
                    secondes=0;
                 }
-                if(mils<10){
+                if(mils<=10){
                    mils="0"+mils;
                 }
 
@@ -64,7 +61,6 @@
                   mils=0;
                   minutes=0;
                   clearTimeout(count);
-                 lapslist.textContent="";
             }
         
         
