@@ -213,8 +213,10 @@ var MineSweeper = {
     displayLose: function() {
     //  Affiche le resultat en alerte
         alert("Vous avez perdu, LOOSER!");
+        
 
         // Etat de la partie a termine 
         this.game.status = 0;
     },
+
 } 

@@ -6,7 +6,7 @@ Divers :
 - 👌 Mise en forme de la page
 Jeu :
 - 👌 Lancement de la partie 
-- Affichage du plateau
+- 👌 Affichage du plateau
 - 👌 Placement aléatoire des bombes
 - 👌 Sélection d’une case
 - 👌 Révélation des cases adjacentes si vides
