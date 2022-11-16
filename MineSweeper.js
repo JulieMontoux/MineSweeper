@@ -199,22 +199,22 @@ var MineSweeper = {
             }
         }
 
-        /* Aucune case bloquante trouvee, on affiche la victoire */
+        //  Affiche la victoire 
         this.displayWin();
     },
 
     displayWin: function() {
-        /* Affiche le resultat dans l'espace dedie, en couleur */
+        // Affiche le resultat en alerte
         alert("Bravo vous avez gagné!");
-        /* Defini l'etat de la partie a termine */
+        // Etat de la partie : terminé
         this.game.status = 0;
     },
 
     displayLose: function() {
-        /* Affiche le resultat dans l'espace dedie, en couleur */
+    //  Affiche le resultat en alerte
         alert("Vous avez perdu, LOOSER!");
 
-        /* Defini l'etat de la partie a termine */
+        // Etat de la partie a termine 
         this.game.status = 0;
     },
 };

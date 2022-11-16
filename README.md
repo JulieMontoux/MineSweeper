@@ -11,7 +11,7 @@ Jeu :
 - 👌 Sélection d’une case
 - 👌 Révélation des cases adjacentes si vides
 N.B. :la révélation doit se propager si nécessaire
-○Clic droit pour placer/enlever un drapeau
+- Clic droit pour placer/enlever un drapeau
 N.B. :les cases avec drapeau ne peuvent pas êtredévoilées
 - 👌Fin de jeu (affichage gagné/perdu et révélation du plateau)
 Bonus :
