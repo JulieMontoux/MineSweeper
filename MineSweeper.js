@@ -215,7 +215,7 @@ var MineSweeper = {
         alert("Vous avez perdu, LOOSER!");
         
 
-        // Etat de la partie a termine 
+        // Etat de la partie : terminé
         this.game.status = 0;
     },
 
